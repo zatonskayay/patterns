@@ -9,6 +9,6 @@ public class ElfIsGeneral implements General {
 
     @Override
     public void ready() {
-        System.out.println("Эльф " + this.index + " получает звание: командир");
+        System.out.println("Эльф " + this.index + " получает звание: генерал");
     }
 }

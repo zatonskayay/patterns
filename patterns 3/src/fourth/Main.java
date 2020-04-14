@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Elves elves = new Elves("Визи", 5, 10);
-        Orcs orcs = new Orcs("Данглар", 3, 12);
+        Elves elves = new Elves("Визи", 2, 3);
+        Orcs orcs = new Orcs("Данглар", 3, 2);
 
         game(elves, orcs);
     }
