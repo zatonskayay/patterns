@@ -1,26 +1,17 @@
 package fourth;
 
 public class Main {
-    public static void main(String[] args){
-        Army elvArmy = new Elves();
-        elvArmy.put(elvArmy.beCommander());
-        for (int i = 0; i < 3; ++i)
-            elvArmy.put(elvArmy.beGeneral());
-        for (int i = 0; i < 10; ++i){
-            elvArmy.put(elvArmy.beSoldier());
-        }
 
-        Army orcArmy = new Orcs();
-        orcArmy.put(orcArmy.beCommander());
-        orcArmy.put(orcArmy.beGeneral());
-        for (int i = 0; i < 10; ++i){
-            orcArmy.put(orcArmy.beSoldier());
-        }
+    private static void game(Army elves, Army orcs) {
+        elves.ready();
+        orcs.ready();
+    }
 
-        System.out.println("Создана армия Эльфов.");
-        System.out.println( ((Elves) elvArmy).loading());
+    public static void main(String[] args) {
 
-        System.out.println("Создана армия Орков.");
-        System.out.println(((Orcs)orcArmy).loading());
+        Elves elves = new Elves("Визи", 5, 10);
+        Orcs orcs = new Orcs("Данглар", 3, 12);
+
+        game(elves, orcs);
     }
 }

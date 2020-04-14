@@ -1,8 +1,10 @@
 package fourth;
 
 public interface Army {
-    void put(Object o);
-    Commander beCommander();
-    General beGeneral();
-    Soldier beSoldier();
+    void ready();
+
+    Commander beCommander(String name);
+    General beGeneral(int index);
+    Soldier beSoldier(int index);
+
 }
